@@ -19,7 +19,7 @@
     //print_r, untuk mencetak isi array
     //var_dump, untuk melihat isi variable ngebuging
 
-    echo "Sahrul";
+    var_dump("Sahrul");
     ?>
 
 </body>
