@@ -47,6 +47,12 @@
     // $y = 5;
     //echo $x;
 
+    // $nama = "Sahrul";
+    // $nama .= " ";
+    // $nama .= "Rojab";
+    // echo $nama;
+
+
 
     //     $nama = "Sahrul";
     //     
