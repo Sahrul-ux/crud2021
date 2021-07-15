@@ -52,6 +52,12 @@
     // $nama .= "Rojab";
     // echo $nama;
 
+    //perbandingan
+    //<, >, <=, >=, ==, !=
+    // var_dump(1 == "1");
+
+
+
 
 
     //     $nama = "Sahrul";
