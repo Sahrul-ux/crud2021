@@ -33,25 +33,49 @@
     // $x = 10;
     // $y = 20;
     // echo $x + $y;
-    $nama = "Sahrul";
+
+
+    // penggabung string /concatination / concat
+    // . 
+    //$nama_depan = "Sahrul";
+    // $bama_belakang = "rojab";
+    // echo $nama_depan . " " . $nama_belakang;
+
+
+    //     $nama = "Sahrul";
+    //     
     ?>
 
+    //
     <!DOCTYPE html>
-    <html lang="en">
+    // <html lang="en">
+
+    //
 
     <head>
+        //
         <meta charset="UTF-8">
+        //
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        //
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Belajar PHP</title>
+        // <title>Belajar PHP</title>
+        //
     </head>
 
-    <body>
-        <H1>Halo, Selamat Datang <?php echo "$nama"; ?> </H1>
+    //
 
-    </body>
+    <body>
+        // <H1>Halo, Selamat Datang <?php echo "$nama"; ?> </H1>
+
+        // </body>
+
+    //
 
     </html>
+    //
 </body>
+
+//
 
 </html>
