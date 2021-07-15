@@ -25,6 +25,7 @@
 
     // Variable dan tipe data
     // Variable
+    // tidak boleh diawali dengan angka, tapi boleh mengandung angka
     $nama = "Sahrul";
     ?>
 
@@ -39,7 +40,7 @@
     </head>
 
     <body>
-        <H1>Halo, Selamat Datang</H1>
+        <H1>Halo, Selamat Datang <?php echo "$nama"; ?> </H1>
 
     </body>
 
