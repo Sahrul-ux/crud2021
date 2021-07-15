@@ -26,6 +26,13 @@
     // Variable dan tipe data
     // Variable
     // tidak boleh diawali dengan angka, tapi boleh mengandung angka
+
+    // Operator
+    // aritmatika
+    // + - * / %
+    // $x = 10;
+    // $y = 20;
+    // echo $x + $y;
     $nama = "Sahrul";
     ?>
 
