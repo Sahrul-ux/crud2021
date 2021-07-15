@@ -41,6 +41,12 @@
     // $bama_belakang = "rojab";
     // echo $nama_depan . " " . $nama_belakang;
 
+    // Assignment
+    // ==, +=, -=, *=, /=, %=, .=
+    // $x = 1;
+    // $y = 5;
+    //echo $x;
+
 
     //     $nama = "Sahrul";
     //     
