@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operator Kendali</title>
 </head>
+<?php
+// pengulangan
+// for 
+// while 
+// do.. while 
+// foreach : pengulangan khusus array
+
+//contoh for
+
+?>
 
 <body>
 
