@@ -20,11 +20,16 @@
 // }
 
 // contoh while -->selama kondisi true lakukan didalamnya
-$i = 0;
-while ($i < 5) {
-    echo "Hello World! <br>";
+// 
+
+// contoh do.. while --> perbedaanya dengan while ini dijalnkan lebih dahulu baru dicek
+// do.. while miniman cetak satu kali walau kondisi false
+
+$i = 10;
+do {
+    echo "Halo Sahrul! <br>";
     $i++;
-}
+} while ($i < 5);
 
 
 ?>
