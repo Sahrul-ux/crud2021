@@ -15,9 +15,17 @@
 // foreach : pengulangan khusus array
 
 //contoh for
-for ($i = 0; $i < 5; $i++) {
-    echo "Hello Sahrul <br>";
+// for ($i = 0; $i < 5; $i++) {
+//     echo "Hello Sahrul ";
+// }
+
+// contoh while 
+$i = 0;
+while ($i < 5) {
+    echo "Hello World! <br>";
+    $i++;
 }
+
 
 ?>
 
