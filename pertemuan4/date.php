@@ -9,9 +9,14 @@
 </head>
 
 <body>
-    // Date untuk menampilkan tanggal dengan format tertentu
-    // contoh dibawah tmapilnya adalah
-    <?php echo date("l, d-M-Y"); ?>
+    <!-- Date untuk menampilkan tanggal dengan format tertentu
+    contoh dibawah tmapilnya adalah Wednesday, 21-Jul-2021 -->
+    <!-- echo date "l, d-M-Y"; -->
+
+    <!-- Time
+    UNIX TimeStamp/ EPOCH time
+    detik yang sedang berlalu sejak 1 januari 1970 -->
+    echo time();
 </body>
 
 </html>
