@@ -18,7 +18,7 @@
     detik yang sedang berlalu sejak 1 januari 1970 -->
     <!-- echo time; -->
     <?php
-    echo date("l", time() + 60 * 60 * 24 * 100);
+    echo date("d M Y", time() - 60 * 60 * 24 * 100);
     ?>
 </body>
 
