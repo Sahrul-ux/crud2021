@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    // Date untuk menampilkan tanggal dengan format tertentu
+    // contoh dibawah tmapilnya adalah
     <?php echo date("l, d-M-Y"); ?>
 </body>
 
