@@ -16,7 +16,10 @@
     <!-- Time
     UNIX TimeStamp/ EPOCH time
     detik yang sedang berlalu sejak 1 januari 1970 -->
-    echo time();
+    <!-- echo time; -->
+    <?php
+    echo date("l", time() + 60 * 60 * 24 * 100);
+    ?>
 </body>
 
 </html>
