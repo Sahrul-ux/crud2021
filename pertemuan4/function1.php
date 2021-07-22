@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+function salam($waktu, $nama)
+{
+    return "Selamat $waktu, $nama!";
+}
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +16,7 @@
 </head>
 
 <body>
-
+    <h1> <?php echo salam("Siang", "Sahrul"); ?> </h1>
 </body>
 
 </html>
