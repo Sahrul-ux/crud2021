@@ -17,9 +17,17 @@
     UNIX TimeStamp/ EPOCH time
     detik yang sedang berlalu sejak 1 januari 1970 -->
     <!-- echo time; -->
-    <?php
-    echo date("d M Y", time() - 60 * 60 * 24 * 100);
-    ?>
+
+    <!-- echo date"d M Y", time - 60 * 60 * 24 * 100; -->
+
+
+    <!-- mktime 
+    membuat sendiri detik 
+    mktime 0,0,0,0,0,0
+    jam, menit, detik, bulan, tanggal, tahun  -->
+
+    <?php echo date("l", mktime(0, 0, 0, 2, 12, 1991)); ?>
+
 </body>
 
 </html>
