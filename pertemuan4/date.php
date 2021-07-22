@@ -26,7 +26,11 @@
     mktime 0,0,0,0,0,0
     jam, menit, detik, bulan, tanggal, tahun  -->
 
-    <?php echo date("l", mktime(0, 0, 0, 2, 12, 1991)); ?>
+    <!--  echo date "l", mktime 0, 0, 0, 2, 12, 1991 ; -->
+
+    <!-- strtotime -->
+    <?php echo date("l", strtotime("12 feb 1991")) ?>
+
 
 </body>
 
