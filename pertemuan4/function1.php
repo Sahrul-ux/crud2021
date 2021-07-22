@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-function salam($waktu, $nama)
+function salam($waktu = "Datang", $nama = "Admin")
 {
     return "Selamat $waktu, $nama!";
 }
@@ -16,7 +16,7 @@ function salam($waktu, $nama)
 </head>
 
 <body>
-    <h1> <?php echo salam("Siang", "Sahrul"); ?> </h1>
+    <h1> <?php echo salam("Pagi", "Sahrul"); ?> </h1>
 </body>
 
 </html>
