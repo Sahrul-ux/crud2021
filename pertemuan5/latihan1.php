@@ -17,3 +17,5 @@ $arr1 = [123, "tulisan", false];
 
 // menampilkan array
 var_dump($hari);
+echo "<br>";
+print_r($arr1);
