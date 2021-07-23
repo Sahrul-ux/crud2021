@@ -19,3 +19,10 @@ $arr1 = [123, "tulisan", false];
 var_dump($hari);
 echo "<br>";
 print_r($arr1);
+echo "<br>";
+
+// menampilkan satu elemen pada array
+echo $hari[1];
+echo "<br>";
+echo $bulan[0];
+echo "<br>";
