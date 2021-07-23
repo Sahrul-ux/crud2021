@@ -16,13 +16,20 @@ $bulan = ["Januari", "Februari", "Maret"];
 $arr1 = [123, "tulisan", false];
 
 // menampilkan array
-var_dump($hari);
-echo "<br>";
-print_r($arr1);
-echo "<br>";
+// var_dump($hari);
+// echo "<br>";
+// print_r($arr1);
+// echo "<br>";
 
-// menampilkan satu elemen pada array
-echo $hari[1];
+// // menampilkan satu elemen pada array
+// echo $hari[1];
+// echo "<br>";
+// echo $bulan[0];
+// echo "<br>";
+
+// menampilkan elemen baru pada array
+var_dump($hari);
+$hari[] = "Kamis";
+$hari[] = "Jumat";
 echo "<br>";
-echo $bulan[0];
-echo "<br>";
+var_dump($hari);
