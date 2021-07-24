@@ -12,3 +12,7 @@ $arr = [20, "Dodi", true];
 var_dump($kucing);
 echo "<br>";
 print_r($pemilik);
+echo "<br>";
+
+// mencetak elemen 1 pada array
+echo $arr[0];
