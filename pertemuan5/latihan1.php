@@ -27,7 +27,7 @@ $arr1 = [123, "tulisan", false];
 // echo $bulan[0];
 // echo "<br>";
 
-// menampilkan elemen baru pada array
+// menambahkn dan menampilkan elemen baru pada array
 var_dump($hari);
 $hari[] = "Kamis";
 $hari[] = "Jumat";
