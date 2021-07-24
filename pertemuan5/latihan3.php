@@ -1,7 +1,8 @@
 <?php
 $kucing = [
     ["Oren", 3, "Heru", "Wishkas", "cempaka putih"],
-    ["Loreng", 12, "Aldi", "Wishkas", "Kayu Putih"]
+    ["Loreng", 12, "Aldi", "Wishkas", "Kayu Putih"],
+    ["Hitam", 5, "Parto", "Wishkas", "Priok"]
 ];
 
 ?>
@@ -19,11 +20,11 @@ $kucing = [
     <h1>Daftar Kucing</h1>
     <?php foreach ($kucing as $k) : ?>
         <ul>
-            <li><?php echo $k[0]; ?></li>
-            <li><?php echo $k[1]; ?></li>
-            <li><?php echo $k[2]; ?></li>
-            <li><?php echo $k[3]; ?></li>
-            <li><?php echo $k[4]; ?></li>
+            <li>Jenis Kucing: <?php echo $k[0]; ?></li>
+            <li>Usia : <?php echo $k[1]; ?>bln.</li>
+            <li>Nama Pemilik: <?php echo $k[2]; ?></li>
+            <li>Makanan : <?php echo $k[3]; ?></li>
+            <li>Alamat : <?php echo $k[4]; ?></li>
         </ul>
     <?php endforeach; ?>
 </body>
