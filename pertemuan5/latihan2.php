@@ -1,7 +1,7 @@
 <?php
 // pengulangan pada array 
 // for / foreach
-$angka = [3, 2, 15, 20, 11, 77, 89];
+$angka = [3, 2, 15, 20, 11, 77];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@ $angka = [3, 2, 15, 20, 11, 77, 89];
 </head>
 
 <body>
-    <?php for ($i = 0; $i < 7; $i++) { ?>
+    <?php for ($i = 0; $i < count($angka); $i++) { ?>
         <div><?php echo $angka[$i]; ?></div>
     <?php } ?>
 
