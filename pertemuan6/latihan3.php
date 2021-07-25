@@ -5,21 +5,24 @@ $kucing = [
         "usia" => 3,
         "namapemilik" => "Heru",
         "makanan" => "Wishkas",
-        "alamat" => "cempaka putih"
+        "alamat" => "cempaka putih",
+        "gambar" => "binaniaga2a.jpg"
     ],
     [
         "jeniskucing" => "Loreng",
         "usia" => 12,
         "namapemilik" => "Aldi",
         "makanan" => "Wishkas",
-        "alamat" => "Kayu Putih"
+        "alamat" => "Kayu Putih",
+        "gambar" => "binaniaga3.JPG"
     ],
     [
         "jeniskucing" => "Hitam",
         "usia" => 5,
         "namapemilik" => "Parto",
         "makanan" => "Wishkas",
-        "alamat" => "Priok"
+        "alamat" => "Priok",
+        "gambar" => "binaniaga6.jpg"
     ]
 ];
 
@@ -38,6 +41,9 @@ $kucing = [
     <h1>Daftar Kucing</h1>
     <?php foreach ($kucing as $k) : ?>
         <ul>
+            <li>
+                <img src="img/<?php echo $k["gambar"]; ?>" alt="gambar kucing">
+            </li>
             <li>Jenis Kucing: <?php echo $k["jeniskucing"]; ?></li>
             <li>Usia : <?php echo $k["usia"]; ?>bln.</li>
             <li>Nama Pemilik: <?php echo $k["namapemilik"]; ?></li>
