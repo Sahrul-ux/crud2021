@@ -23,17 +23,28 @@
             border-radius: 50%;
 
         }
+
+        .clear {
+            clear: both;
+        }
     </style>
 </head>
 
 <body>
 
     <?php
-    $angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    $angka = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
     ?>
 
     <?php foreach ($angka as $a) : ?>
-        <div class="kotak"><?php echo $a; ?></div>
+        <?php foreach ($a as $b) : ?>
+            <div class="kotak"><?php echo $b; ?></div>
+        <?php endforeach; ?>
+        <div class="clear"></div>
     <?php endforeach; ?>
 </body>
 
