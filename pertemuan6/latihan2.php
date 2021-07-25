@@ -15,6 +15,13 @@
             line-height: 30px;
             margin: 3px;
             float: left;
+            transition: 1s;
+        }
+
+        .kotak:hover {
+            transform: rotate(360deg);
+            border-radius: 50%;
+
         }
     </style>
 </head>
