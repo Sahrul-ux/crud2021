@@ -1,8 +1,26 @@
 <?php
 $kucing = [
-    ["Oren", 3, "Heru", "Wishkas", "cempaka putih"],
-    ["Loreng", 12, "Aldi", "Wishkas", "Kayu Putih"],
-    ["Hitam", 5, "Parto", "Wishkas", "Priok"]
+    [
+        "jeniskucing" => "Oren",
+        "usia" => 3,
+        "namapemilik" => "Heru",
+        "makanan" => "Wishkas",
+        "alamat" => "cempaka putih"
+    ],
+    [
+        "jeniskucing" => "Loreng",
+        "usia" => 12,
+        "namapemilik" => "Aldi",
+        "makanan" => "Wishkas",
+        "alamat" => "Kayu Putih"
+    ],
+    [
+        "jeniskucing" => "Hitam",
+        "usia" => 5,
+        "namapemilik" => "Parto",
+        "makanan" => "Wishkas",
+        "alamat" => "Priok"
+    ]
 ];
 
 ?>
@@ -20,11 +38,11 @@ $kucing = [
     <h1>Daftar Kucing</h1>
     <?php foreach ($kucing as $k) : ?>
         <ul>
-            <li>Jenis Kucing: <?php echo $k[0]; ?></li>
-            <li>Usia : <?php echo $k[1]; ?>bln.</li>
-            <li>Nama Pemilik: <?php echo $k[2]; ?></li>
-            <li>Makanan : <?php echo $k[3]; ?></li>
-            <li>Alamat : <?php echo $k[4]; ?></li>
+            <li>Jenis Kucing: <?php echo $k["jeniskucing"]; ?></li>
+            <li>Usia : <?php echo $k["usia"]; ?>bln.</li>
+            <li>Nama Pemilik: <?php echo $k["namapemilik"]; ?></li>
+            <li>Makanan : <?php echo $k["makanan"]; ?></li>
+            <li>Alamat : <?php echo $k["alamat"]; ?></li>
         </ul>
     <?php endforeach; ?>
 </body>
