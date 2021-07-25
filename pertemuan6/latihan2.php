@@ -27,7 +27,14 @@
 </head>
 
 <body>
-    <div class="kotak">3</div>
+
+    <?php
+    $angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    ?>
+
+    <?php foreach ($angka as $a) : ?>
+        <div class="kotak"><?php echo $a; ?></div>
+    <?php endforeach; ?>
 </body>
 
 </html>
