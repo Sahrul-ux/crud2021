@@ -9,4 +9,7 @@
 // $_SERVER
 // $_ENV
 
-var_dump($_SERVER);
+// 1. $_GET
+$_GET["jeniskucing"] = "persia";
+$_GET["warna"] = "oren";
+var_dump($_GET);
