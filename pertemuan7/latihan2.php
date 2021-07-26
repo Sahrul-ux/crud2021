@@ -67,7 +67,7 @@ $kucing = [
     <ul>
         <?php foreach ($kucing as $k) : ?>
             <li>
-                <a href="latihan3.php"> <?= $k["namapemilik"]; ?></a>
+                <a href="latihan3.php?namapemilik=<?= $k["namapemilik"]; ?>&jeniskucing=<?= $k["jeniskucing"]; ?>&warna=<?= $k["warna"]; ?>&namakucing=<?= $k["namakucing"]; ?>&makanan=<?= $k["makanan"]; ?>&usia=<?= $k["usia"]; ?>&notelp=<?= $k["notelp"]; ?>&alamat=<?= $k["alamat"]; ?>&email=<?= $k["email"]; ?>"> <?= $k["namapemilik"]; ?></a>
             </li>
         <?php endforeach; ?>
     </ul>
