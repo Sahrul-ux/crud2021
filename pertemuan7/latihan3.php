@@ -47,4 +47,5 @@ if (
     <a href="latihan2.php">Kembali Ke Home</a>
 </body>
 
+
 </html>
