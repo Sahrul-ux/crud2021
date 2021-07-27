@@ -24,7 +24,7 @@ $kucing = [
         "notelp" => "081",
         "alamat" => "cempaka putih",
         "email" => "heru@gmail.com",
-        "gambar" => "binaniaga2a.jpg"
+        "gambar" => "gambar1.jpg"
     ],
     [
         "jeniskucing" => "Persia",
@@ -36,7 +36,7 @@ $kucing = [
         "notelp" => "089",
         "alamat" => "Celilitaan",
         "email" => "woro@gmail.com",
-        "gambar" => "binaniaga3.JPG"
+        "gambar" => "gambar2.jpg"
     ],
     [
         "jeniskucing" => "Mixdom",
@@ -48,7 +48,7 @@ $kucing = [
         "notelp" => "088",
         "alamat" => "Pulo Gadung",
         "email" => "seto@gmail.com",
-        "gambar" => "binaniaga6.jpg"
+        "gambar" => "gambar3.jpg"
     ]
 ];
 ?>
