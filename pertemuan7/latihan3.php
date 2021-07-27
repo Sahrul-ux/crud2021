@@ -10,7 +10,7 @@
 
 <body>
     <ul>
-        <li><img src="img/gambar1.jpg"></li>
+        <li><img src="img/<?= $_GET["gambar"]; ?>"></li>
         <li><?= $_GET["jeniskucing"]; ?></li>
         <li><?= $_GET["warna"]; ?></li>
         <li><?= $_GET["namakucing"]; ?></li>
