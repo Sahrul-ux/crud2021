@@ -1,6 +1,17 @@
 <?php
 // cek apakah tidak ada data di $_GET
-if (!isset($_GET["namapemilik"])) {
+if (
+    !isset($_GET["namapemilik"]) ||
+    !isset($_GET["jeniskucing"]) ||
+    !isset($_GET["warna"]) ||
+    !isset($_GET["namakucing"]) ||
+    !isset($_GET["namapemilik"]) ||
+    !isset($_GET["makanan"]) ||
+    !isset($_GET["usia"]) ||
+    !isset($_GET["notelp"]) ||
+    !isset($_GET["alamat"]) ||
+    !isset($_GET["email"])
+) {
     // redirect
     header("Location: latihan2.php");
     exit;
