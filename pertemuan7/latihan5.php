@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <H1>Selamat datang, Admin!</H1>
+    <H1>Selamat datang, <?= $_POST["nama"]; ?> !</H1>
 </body>
 
 </html>
