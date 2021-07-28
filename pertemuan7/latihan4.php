@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <form action="latihan5.php" method="post">
+    <?php if (isset($_POST["submit"])) : ?>
+        <h1>Hallo Selamat Datang <?= $_POST["nama"]; ?></h1>
+    <?php endif; ?>
+    <form method="post">
         Masukkan nama :
         <input type="text" name="nama">
         <br>

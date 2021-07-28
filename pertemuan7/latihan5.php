@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <H1>Selamat datang, <?= $_POST["nama"]; ?> !</H1>
 </body>
 
