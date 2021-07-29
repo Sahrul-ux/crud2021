@@ -26,6 +26,24 @@
             <th>Email</th>
             <th>Foto Pemilik</th>
         </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <a href="">ubah</a> |
+                <a href="">hapus</a>
+            </td>
+            <td><img src="img/gambar1.jpg" width=" 50"></td>
+            <td>Jenis Kucing</td>
+            <td>Warna</td>
+            <td>Nama Kucing</td>
+            <td>Makanan</td>
+            <td>Usia</td>
+            <td>Nama Pemilik</td>
+            <td>Alamat</td>
+            <td>No. Telp</td>
+            <td>Email</td>
+            <td><img src="img/gambar1.jpg" width=" 50"></td>
+        </tr>
     </table>
 </body>
 
