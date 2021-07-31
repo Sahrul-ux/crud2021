@@ -15,8 +15,8 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 // mysqli_fetch_array() -> mengembalikan keduanya (data jadi doble)
 // mysqli_fetch_object() -> mengembalikan objek
 
-$k = mysqli_fetch_object($result);
-var_dump($k->namakucing);
+while ($k = mysqli_fetch_assoc($result))
+    var_dump($k["namakucing"]);
 
 ?>
 <!DOCTYPE html>
