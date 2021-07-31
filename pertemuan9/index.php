@@ -1,3 +1,18 @@
+<?php
+// koneksi ke database
+$conn = mysqli_connect("localhost", "root", "", "kucing");
+// ambil data dari tabel kucing / query data kucing
+$result = mysqli_query($conn, "SELECT * FROM kucing");
+
+// ambil data (fetch) mahasiswa dari objek result
+// mysqli_fetch_row()
+// mysqli_fetch_assoc()
+// mysqli_fetch_array()
+// mysqli_fetch_object()
+
+$k = mysqli_fetch_array($result);
+var_dump($k);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +47,7 @@
                 <a href="">ubah</a> |
                 <a href="">hapus</a>
             </td>
-            <td><img src="img/gambar1.jpg" width=" 50"></td>
+            <td><img src="kucing/kucing1.jpg" width="100"></td>
             <td>Jenis Kucing</td>
             <td>Warna</td>
             <td>Nama Kucing</td>
@@ -42,7 +57,7 @@
             <td>Alamat</td>
             <td>No. Telp</td>
             <td>Email</td>
-            <td><img src="img/gambar1.jpg" width=" 50"></td>
+            <td><img src="img/gambar1.jpg" width="100"></td>
         </tr>
     </table>
 </body>
