@@ -2,16 +2,22 @@
 // koneksi ke database
 $conn = mysqli_connect("localhost", "root", "", "kucing");
 // ambil data dari tabel kucing / query data kucing
-$result = mysqli_query($conn, "SELECT * FROM kucing");
+$result = mysqli_query($conn, "SELECT * FROM tb_kucing");
+// cara munculin eror :
+// if (!$result) {
+//     echo mysqli_error($conn);
+// }
+// var_dump($result);
 
 // ambil data (fetch) mahasiswa dari objek result
-// mysqli_fetch_row()
+// mysqli_fetch_row() -> mengembalikan array numerik
 // mysqli_fetch_assoc()
 // mysqli_fetch_array()
 // mysqli_fetch_object()
 
-$k = mysqli_fetch_array($result);
-var_dump($k);
+$k = mysqli_fetch_row($result);
+var_dump($k[3]);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
