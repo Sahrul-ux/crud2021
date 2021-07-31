@@ -47,10 +47,10 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
             <th>Email</th>
             <th>Foto Pemilik</th>
         </tr>
-
+        <?php $i = 1; ?>
         <?php while ($row = mysqli_fetch_assoc($result)) : ?>
             <tr>
-                <td>1</td>
+                <td><?= $i; ?></td>
                 <td>
                     <a href="">ubah</a> |
                     <a href="">hapus</a>
@@ -67,6 +67,7 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
                 <td><?= $row["jeniskucing"]; ?></td>
                 <td><img src="img/<?= $row["fotopemilik"]; ?>" width="100"></td>
             </tr>
+            <?= $i++; ?>
         <?php endwhile; ?>
 </body>
 
