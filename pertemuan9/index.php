@@ -1,6 +1,5 @@
 <?php
-// koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "kucing");
+require 'functions.php';
 // ambil data dari tabel kucing / query data kucing
 $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 // cara munculin eror :
