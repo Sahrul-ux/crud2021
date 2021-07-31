@@ -11,12 +11,12 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 
 // ambil data (fetch) mahasiswa dari objek result
 // mysqli_fetch_row() -> mengembalikan array numerik
-// mysqli_fetch_assoc()
-// mysqli_fetch_array()
-// mysqli_fetch_object()
+// mysqli_fetch_assoc() -> mengembalikan arrray asosiatif
+// mysqli_fetch_array() -> mengembalikan keduanya (data jadi doble)
+// mysqli_fetch_object() -> mengembalikan objek
 
-$k = mysqli_fetch_assoc($result);
-var_dump($k["namapemilik"]);
+$k = mysqli_fetch_object($result);
+var_dump($k->namakucing);
 
 ?>
 <!DOCTYPE html>
