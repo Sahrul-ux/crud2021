@@ -15,8 +15,8 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 // mysqli_fetch_array()
 // mysqli_fetch_object()
 
-$k = mysqli_fetch_row($result);
-var_dump($k[3]);
+$k = mysqli_fetch_assoc($result);
+var_dump($k["namapemilik"]);
 
 ?>
 <!DOCTYPE html>
