@@ -31,6 +31,8 @@ $kcg = query("SELECT * FROM tb_kucing");
 
 <body>
     <h1>Daftar Kucing</h1>
+    <a href="tambah.php">Tambah Data Kucing</a>
+    <br><br>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No.</th>
