@@ -67,7 +67,7 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
                 <td><?= $row["jeniskucing"]; ?></td>
                 <td><img src="img/<?= $row["fotopemilik"]; ?>" width="100"></td>
             </tr>
-            <?= $i++; ?>
+            <?php $i++; ?>
         <?php endwhile; ?>
 </body>
 

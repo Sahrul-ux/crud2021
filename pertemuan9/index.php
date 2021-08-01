@@ -67,7 +67,7 @@ $kcg = query("SELECT * FROM tb_kucing");
                 <td><?= $row["jeniskucing"]; ?></td>
                 <td><img src="img/<?= $row["fotopemilik"]; ?>" width="100"></td>
             </tr>
-            <?= $i++; ?>
+            <?php $i++; ?>
         <?php endforeach; ?>
 </body>
 
