@@ -1,7 +1,8 @@
 <?php
 require 'functions.php';
+$kcg = query("SELECT * FROM tb_kucing");
 // ambil data dari tabel kucing / query data kucing
-$result = mysqli_query($conn, "SELECT * FROM tb_kucing");
+// $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 // cara munculin eror :
 // if (!$result) {
 //     echo mysqli_error($conn);
@@ -47,7 +48,7 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
             <th>Foto Pemilik</th>
         </tr>
         <?php $i = 1; ?>
-        <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+        <?php foreach ($kcg as $row) : ?>
             <tr>
                 <td><?= $i; ?></td>
                 <td>
@@ -67,7 +68,7 @@ $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
                 <td><img src="img/<?= $row["fotopemilik"]; ?>" width="100"></td>
             </tr>
             <?= $i++; ?>
-        <?php endwhile; ?>
+        <?php endforeach; ?>
 </body>
 
 </html>
