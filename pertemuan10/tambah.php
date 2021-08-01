@@ -7,9 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Kucing</title>
 </head>
+<h1>Tambah Data Kucing</h1>
 
 <body>
+    <form action="" method="post">
+        <ul>
+            <li>
+                <label for="jeniskucing">Jenis Kucing</label>
+                <input type="text" name="jeniskucing" id="jeniskucing">
+            </li>
+            <li>
+                <label for="warna">Warna</label>
+                <input type="text" name="warna" id="warna">
+            </li>
+            <li>
+                <label for="namakucing">Nama Kucing</label>
+                <input type="text" name="namakucing" id="namakucing">
+            </li>
+            <li>
+                <label for="makanan">Makanan</label>
+                <input type="text" name="makanan" id="makanan">
+            </li>
+            <li>
+                <label for="usia">Usia</label>
+                <input type="text" name="usia" id="usia">
+            </li>
+            <li>
+                <label for="fotokucing">Foto Kucing</label>
+                <input type="text" name="fotokucing" id="fotokucing">
+            </li>
+            <li>
+                <label for="namapemilik">Nama Pemilik</label>
+                <input type="text" name="namapemilik" id="namapemilik">
+            </li>
+            <li>
+                <label for="alamat">Alamat</label>
+                <input type="text" name="alamat" id="alamat">
+            </li>
+            <li>
+                <label for="notelp">No. Telp</label>
+                <input type="text" name="notelp" id="notelp">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </li>
+            <li>
+                <label for="fotopemilik">Foto Pemilik</label>
+                <input type="text" name="fotopemilik" id="fotopemilik">
+            </li>
+            <lI>
+                <button type="submit" name="submit">Tambah Data</button>
+            </lI>
 
+
+        </ul>
+    </form>
 </body>
 
 </html>
