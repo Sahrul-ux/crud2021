@@ -1,6 +1,5 @@
 <?php
-// koneksi ke DBMS
-$conn = mysqli_connect("localhost", "root", "", "kucing");
+
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
     // var_dump($_POST);
