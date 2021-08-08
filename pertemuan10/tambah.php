@@ -22,6 +22,9 @@ if (isset($_POST["submit"])) {
     VALUES
     ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik')";
     mysqli_query($conn, $query);
+
+    // cek apakah data berhasil ditambahkan atau tidak
+    var_dump(mysqli_affected_rows($conn));
 }
 
 ?>
