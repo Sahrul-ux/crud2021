@@ -20,7 +20,7 @@ if (isset($_POST["submit"])) {
     // query insert data
     $query = "INSERT INTO tb_kucing
     VALUES
-    ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik')";
+    ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik)";
     mysqli_query($conn, $query);
 
     // cek apakah data berhasil ditambahkan atau tidak
