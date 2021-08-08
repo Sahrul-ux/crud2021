@@ -3,18 +3,15 @@
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
     // var_dump($_POST);
-
-
-
     // cek apakah data berhasil ditambahkan atau tidak
-    // var_dump(mysqli_affected_rows($conn));
-    if (mysqli_affected_rows($conn) > 0) {
-        echo "berhasil";
+    if (tambah($_POST) > 0) {
+        echo "data berhasil ditambahkan";
     } else {
-        echo "gagal";
-        echo "<br>";
-        echo mysqli_error($conn);
+        echo "data gagal ditambahkan";
     }
+
+    // var_dump(mysqli_affected_rows($conn));
+
 }
 
 ?>

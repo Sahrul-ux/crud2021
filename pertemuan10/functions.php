@@ -34,4 +34,6 @@ function tambah($data)
     VALUES
     ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik)";
     mysqli_query($conn, $query);
+    // klo gagal -1 klo berhasil 1
+    return mysqli_affected_rows($conn);
 }
