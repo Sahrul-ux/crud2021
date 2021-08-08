@@ -13,18 +13,18 @@ function query($query)
     return $rows;
 }
 
-function tambah($sata)
+function tambah($data)
 {
     // ambil apakah tombol submit sudah ditekan atau belum
-    $jeniskucing = $_POST["jeniskucing"];
-    $warna = $_POST["warna"];
-    $namakucing = $_POST["namakucing"];
-    $makanan = $_POST["makanan"];
-    $usia = $_POST["usia"];
-    $fotokucing = $_POST["fotokucing"];
-    $namapemilik = $_POST["namapemilik"];
-    $alamat = $_POST["alamat"];
-    $notelp = $_POST["notelp"];
-    $email = $_POST["email"];
-    $fotopemilik = $_POST["fotopemilik"];
+    $jeniskucing = $data["jeniskucing"];
+    $warna = $data["warna"];
+    $namakucing = $data["namakucing"];
+    $makanan = $data["makanan"];
+    $usia = $data["usia"];
+    $fotokucing = $data["fotokucing"];
+    $namapemilik = $data["namapemilik"];
+    $alamat = $data["alamat"];
+    $notelp = $data["notelp"];
+    $email = $data["email"];
+    $fotopemilik = $data["fotopemilik"];
 }
