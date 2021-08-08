@@ -5,11 +5,7 @@ $conn = mysqli_connect("localhost", "root", "", "kucing");
 if (isset($_POST["submit"])) {
     // var_dump($_POST);
 
-    // query insert data
-    $query = "INSERT INTO tb_kucing
-    VALUES
-    ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik)";
-    mysqli_query($conn, $query);
+
 
     // cek apakah data berhasil ditambahkan atau tidak
     // var_dump(mysqli_affected_rows($conn));

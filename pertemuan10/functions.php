@@ -15,6 +15,7 @@ function query($query)
 
 function tambah($data)
 {
+    global $conn;
     // ambil apakah tombol submit sudah ditekan atau belum
     $jeniskucing = $data["jeniskucing"];
     $warna = $data["warna"];
@@ -27,4 +28,10 @@ function tambah($data)
     $notelp = $data["notelp"];
     $email = $data["email"];
     $fotopemilik = $data["fotopemilik"];
+
+    // query insert data
+    $query = "INSERT INTO tb_kucing
+    VALUES
+    ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik)";
+    mysqli_query($conn, $query);
 }
