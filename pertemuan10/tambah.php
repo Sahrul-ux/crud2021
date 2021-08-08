@@ -39,7 +39,7 @@ if (isset($_POST["submit"])) {
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>
-                <input type="text" name="jeniskucing" id="jeniskucing">
+                <input type="text" name="jeniskucing" id="jeniskucing" required>
             </li>
             <li>
                 <label for="warna">Warna</label>

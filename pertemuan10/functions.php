@@ -17,17 +17,17 @@ function tambah($data)
 {
     global $conn;
     // ambil apakah tombol submit sudah ditekan atau belum
-    $jeniskucing = $data["jeniskucing"];
-    $warna = $data["warna"];
-    $namakucing = $data["namakucing"];
-    $makanan = $data["makanan"];
-    $usia = $data["usia"];
-    $fotokucing = $data["fotokucing"];
-    $namapemilik = $data["namapemilik"];
-    $alamat = $data["alamat"];
-    $notelp = $data["notelp"];
-    $email = $data["email"];
-    $fotopemilik = $data["fotopemilik"];
+    $jeniskucing = htmlspecialchars($data["jeniskucing"]);
+    $warna = htmlspecialchars($data["warna"]);
+    $namakucing = htmlspecialchars($data["namakucing"]);
+    $makanan = htmlspecialchars($data["makanan"]);
+    $usia = htmlspecialchars($data["usia"]);
+    $fotokucing = htmlspecialchars($data["fotokucing"]);
+    $namapemilik = htmlspecialchars($data["namapemilik"]);
+    $alamat = htmlspecialchars($data["alamat"]);
+    $notelp = htmlspecialchars($data["notelp"]);
+    $email = htmlspecialchars($data["email"]);
+    $fotopemilik = htmlspecialchars($data["fotopemilik"]);
 
     // query insert data
     $query = "INSERT INTO tb_kucing
