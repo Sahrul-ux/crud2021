@@ -5,9 +5,17 @@ if (isset($_POST["submit"])) {
     // var_dump($_POST);
     // cek apakah data berhasil ditambahkan atau tidak
     if (tambah($_POST) > 0) {
-        echo "data berhasil ditambahkan";
+        echo "
+        <script>
+        alert('data berhasil ditambahkan!');
+        documen.location.href = 'index.php';
+        </script>";
     } else {
-        echo "data gagal ditambahkan";
+        echo
+        " <script>
+        alert('data berhasil ditambahkan!');
+        documen.location.href = 'index.php';
+        </script>";
     }
 
     // var_dump(mysqli_affected_rows($conn));
