@@ -77,6 +77,7 @@ function ubah($data)
     fotopemilik = '$fotopemilik'
     WHERE id = $id
     ";
+    mysqli_query($conn, $query);
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
 }
