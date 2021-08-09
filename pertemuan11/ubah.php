@@ -3,7 +3,8 @@ require 'functions.php';
 
 // ambil data di url
 $id = $_GET["id"];
-var_dump($id);
+// var_dump($id);
+$kcg = query("SELECT * FROM tb_kucing WHERE id = $id")[0];
 
 
 // cek apakah tombol submit sudah ditekan atau belum
