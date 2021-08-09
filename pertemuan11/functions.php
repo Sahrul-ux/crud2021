@@ -62,10 +62,19 @@ function ubah($data)
     $fotopemilik = htmlspecialchars($data["fotopemilik"]);
 
     // query insert data
-    $query = "INSERT INTO tb_kucing
-    VALUES
-    ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik')";
-    mysqli_query($conn, $query);
+    $query = "UPDATE tb_kucing SET 
+    jeniskucing = '$jeniskucing',
+    warna = '$warna',
+    namakucing = $namakucing,
+    makanan = $makanan,
+    usia = $usia,
+    fotokucing = $fotokucing,
+    namapemilik = $namapemilik,
+    alamat = $alamat,
+    notelp = $notelp,
+    email = $email,
+    fotopemilik = $fotopemilik
+    ";
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
 }
