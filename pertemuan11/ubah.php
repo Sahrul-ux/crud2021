@@ -1,5 +1,11 @@
 <?php
 require 'functions.php';
+
+// ambil data di url
+$id = $_GET["id"];
+var_dump($id);
+
+
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
     // var_dump($_POST);
