@@ -37,3 +37,10 @@ function tambah($data)
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
 }
+
+function hapus($id)
+{
+    global $conn;
+    mysqli_query($conn, "DELETE FROM tb_kucing WHERE id= $id");
+    return mysqli_affected_rows($conn);
+}

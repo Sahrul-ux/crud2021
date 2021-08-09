@@ -8,13 +8,13 @@ if (isset($_POST["submit"])) {
         echo "
         <script>
         alert('data berhasil ditambahkan!');
-        documen.location.href = 'index.php';
+        document.location.href = 'index.php';
         </script>";
     } else {
         echo
         " <script>
         alert('data berhasil ditambahkan!');
-        documen.location.href = 'index.php';
+        document.location.href = 'index.php';
         </script>";
     }
 

@@ -55,7 +55,7 @@ $kcg = query("SELECT * FROM tb_kucing");
                 <td><?= $i; ?></td>
                 <td>
                     <a href="">ubah</a> |
-                    <a href="">hapus</a>
+                    <a href="hapus.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('yakin akan tetap mengahapus');">hapus</a>
                 </td>
                 <td><img src="kucing/<?php echo $row["fotokucing"]; ?>" width="100"></td>
                 <td><?= $row["jeniskucing"]; ?></td>
