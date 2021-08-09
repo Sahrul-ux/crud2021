@@ -46,47 +46,47 @@ if (isset($_POST["submit"])) {
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>
-                <input type="text" name="jeniskucing" id="jeniskucing" required value=" sabun">
+                <input type="text" name="jeniskucing" id="jeniskucing" required value="<?= $kcg["jeniskucing"]; ?>">
             </li>
             <li>
                 <label for="warna">Warna</label>
-                <input type="text" name="warna" id="warna">
+                <input type="text" name="warna" id="warna" value="<?= $kcg["warna"]; ?>">
             </li>
             <li>
-                <label for="namakucing">Nama Kucing</label>
-                <input type="text" name="namakucing" id="namakucing">
+                <label for=" namakucing">Nama Kucing</label>
+                <input type="text" name="namakucing" id="namakucing" value="<?= $kcg["namakucing"]; ?>">
             </li>
             <li>
                 <label for="makanan">Makanan</label>
-                <input type="text" name="makanan" id="makanan">
+                <input type="text" name="makanan" id="makanan" value="<?= $kcg["makanan"]; ?>">
             </li>
             <li>
                 <label for="usia">Usia</label>
-                <input type="text" name="usia" id="usia">
+                <input type="text" name="usia" id="usia" value="<?= $kcg["usia"]; ?>">
             </li>
             <li>
                 <label for="fotokucing">Foto Kucing</label>
-                <input type="text" name="fotokucing" id="fotokucing">
+                <input type="text" name="fotokucing" id="fotokucing" value="<?= $kcg["fotokucing"]; ?>">
             </li>
             <li>
                 <label for="namapemilik">Nama Pemilik</label>
-                <input type="text" name="namapemilik" id="namapemilik">
+                <input type="text" name="namapemilik" id="namapemilik" value="<?= $kcg["namapemilik"]; ?>">
             </li>
             <li>
                 <label for="alamat">Alamat</label>
-                <input type="text" name="alamat" id="alamat">
+                <input type="text" name="alamat" id="alamat" value="<?= $kcg["alamat"]; ?>">
             </li>
             <li>
                 <label for="notelp">No. Telp</label>
-                <input type="text" name="notelp" id="notelp">
+                <input type="text" name="notelp" id="notelp" value="<?= $kcg["notelp"]; ?>">
             </li>
             <li>
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" value="<?= $kcg["email"]; ?>">
             </li>
             <li>
                 <label for="fotopemilik">Foto Pemilik</label>
-                <input type="text" name="fotopemilik" id="fotopemilik">
+                <input type="text" name="fotopemilik" id="fotopemilik" value="<?= $kcg["fotopemilik"]; ?>">
             </li>
             <lI>
                 <button type="submit" name="submit">Ubah Data</button>
