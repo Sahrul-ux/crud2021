@@ -44,3 +44,28 @@ function hapus($id)
     mysqli_query($conn, "DELETE FROM tb_kucing WHERE id= $id");
     return mysqli_affected_rows($conn);
 }
+
+function ubah($data)
+{
+    global $conn;
+    // ambil apakah tombol submit sudah ditekan atau belum
+    $jeniskucing = htmlspecialchars($data["jeniskucing"]);
+    $warna = htmlspecialchars($data["warna"]);
+    $namakucing = htmlspecialchars($data["namakucing"]);
+    $makanan = htmlspecialchars($data["makanan"]);
+    $usia = htmlspecialchars($data["usia"]);
+    $fotokucing = htmlspecialchars($data["fotokucing"]);
+    $namapemilik = htmlspecialchars($data["namapemilik"]);
+    $alamat = htmlspecialchars($data["alamat"]);
+    $notelp = htmlspecialchars($data["notelp"]);
+    $email = htmlspecialchars($data["email"]);
+    $fotopemilik = htmlspecialchars($data["fotopemilik"]);
+
+    // query insert data
+    $query = "INSERT INTO tb_kucing
+    VALUES
+    ('', '$jeniskucing','$warna', '$namakucing','$makanan', '$usia', '$fotokucing', '$namapemilik', '$alamat', '$notelp','$email', '$fotopemilik')";
+    mysqli_query($conn, $query);
+    // klo gagal -1 klo berhasil 1
+    return mysqli_affected_rows($conn);
+}
