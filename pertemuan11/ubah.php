@@ -43,6 +43,7 @@ if (isset($_POST["submit"])) {
 
 <body>
     <form action="" method="post">
+        <input type="hidden" name="id" value="<?= $kcg["id"]; ?>">
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>

@@ -49,6 +49,7 @@ function ubah($data)
 {
     global $conn;
     // ambil apakah tombol submit sudah ditekan atau belum
+    $id = $data["id"];
     $jeniskucing = htmlspecialchars($data["jeniskucing"]);
     $warna = htmlspecialchars($data["warna"]);
     $namakucing = htmlspecialchars($data["namakucing"]);
@@ -65,15 +66,16 @@ function ubah($data)
     $query = "UPDATE tb_kucing SET 
     jeniskucing = '$jeniskucing',
     warna = '$warna',
-    namakucing = $namakucing,
-    makanan = $makanan,
-    usia = $usia,
-    fotokucing = $fotokucing,
-    namapemilik = $namapemilik,
-    alamat = $alamat,
-    notelp = $notelp,
-    email = $email,
-    fotopemilik = $fotopemilik
+    namakucing = '$namakucing',
+    makanan = '$makanan',
+    usia = '$usia',
+    fotokucing = '$fotokucing',
+    namapemilik = '$namapemilik',
+    alamat = '$alamat',
+    notelp = '$notelp',
+    email = '$email',
+    fotopemilik = '$fotopemilik'
+    WHERE id = $id
     ";
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
