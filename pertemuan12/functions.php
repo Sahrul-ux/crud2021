@@ -81,3 +81,9 @@ function ubah($data)
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
 }
+
+function cari($keyword)
+{
+    $query = "SELECT * FROM tb_kucing WHERE jeniskucing = '$keyword'";
+    return query($query);
+}
