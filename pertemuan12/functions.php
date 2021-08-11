@@ -84,6 +84,6 @@ function ubah($data)
 
 function cari($keyword)
 {
-    $query = "SELECT * FROM tb_kucing WHERE jeniskucing = '$keyword'";
+    $query = "SELECT * FROM tb_kucing WHERE jeniskucing LIKE '%$keyword%'";
     return query($query);
 }
