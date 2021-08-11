@@ -1,6 +1,6 @@
 <?php
 require 'functions.php';
-$kcg = query("SELECT * FROM tb_kucing ORDER BY id DESC");
+$kcg = query("SELECT * FROM tb_kucing WHERE jeniskucing = 'adorabel'");
 // ambil data dari tabel kucing / query data kucing
 // $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 // cara munculin eror :
