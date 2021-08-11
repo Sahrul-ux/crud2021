@@ -1,6 +1,6 @@
 <?php
 require 'functions.php';
-$kcg = query("SELECT * FROM tb_kucing WHERE jeniskucing = 'adorabel'");
+$kcg = query("SELECT * FROM tb_kucing");
 // ambil data dari tabel kucing / query data kucing
 // $result = mysqli_query($conn, "SELECT * FROM tb_kucing");
 // cara munculin eror :
@@ -33,6 +33,10 @@ $kcg = query("SELECT * FROM tb_kucing WHERE jeniskucing = 'adorabel'");
     <h1>Daftar Kucing</h1>
     <a href="tambah.php">Tambah Data Kucing</a>
     <br><br>
+    <form action="" method="post">
+        <input type="text" name="keyword">
+        <button type="submit" name="cari">Cari!</button>
+    </form>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No.</th>
