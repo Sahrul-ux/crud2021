@@ -9,6 +9,11 @@ $kcg = query("SELECT * FROM tb_kucing");
 // }
 // var_dump($result);
 
+// tombol cari ditekan
+if (isset($_POST["cari"])) {
+    $kcg = cari($_POST["keyword"]);
+}
+
 // ambil data (fetch) mahasiswa dari objek result
 // mysqli_fetch_row() -> mengembalikan array numerik
 // mysqli_fetch_assoc() -> mengembalikan arrray asosiatif
