@@ -38,7 +38,7 @@ $kcg = query("SELECT * FROM tb_kucing");
         <button type="submit" name="cari">Cari!</button>
     </form>
     <br>
-    <table border="1" cellpadding="10" cellspacing="0" autofocus>
+    <table border="1" cellpadding="10" cellspacing="0" autofocus placeholder="masukkan kata kunci pencarian...">
         <tr>
             <th>No.</th>
             <th>Aksi</th>
