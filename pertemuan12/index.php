@@ -34,11 +34,11 @@ $kcg = query("SELECT * FROM tb_kucing");
     <a href="tambah.php">Tambah Data Kucing</a>
     <br><br>
     <form action="" method="post">
-        <input type="text" name="keyword" size="40">
+        <input type="text" name="keyword" size="40" autofocus placeholder="masukkan kata kunci pencarian...">
         <button type="submit" name="cari">Cari!</button>
     </form>
     <br>
-    <table border="1" cellpadding="10" cellspacing="0" autofocus placeholder="masukkan kata kunci pencarian...">
+    <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No.</th>
             <th>Aksi</th>
