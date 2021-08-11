@@ -84,6 +84,14 @@ function ubah($data)
 
 function cari($keyword)
 {
-    $query = "SELECT * FROM tb_kucing WHERE jeniskucing LIKE '%$keyword%'";
+    $query = "SELECT * FROM tb_kucing WHERE jeniskucing LIKE '%$keyword%' OR
+    warna LIKE '%$keyword%' OR
+    namakucing LIKE '%$keyword%' OR
+    makanan LIKE '%$keyword%' OR
+    usia LIKE '%$keyword%' OR
+    namapemilik LIKE '%$keyword%' OR
+    alamat LIKE '%$keyword%' OR
+    notelp LIKE '%$keyword%' OR
+    email LIKE '%$keyword%' ";
     return query($query);
 }
