@@ -2,7 +2,8 @@
 require 'functions.php';
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
-    // var_dump($_POST);
+    var_dump($_POST);
+    die;
     // cek apakah data berhasil ditambahkan atau tidak
     if (tambah($_POST) > 0) {
         echo "
@@ -35,7 +36,7 @@ if (isset($_POST["submit"])) {
 <h1>Tambah Data Kucing</h1>
 
 <body>
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>
