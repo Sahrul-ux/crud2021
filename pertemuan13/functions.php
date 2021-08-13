@@ -52,10 +52,26 @@ function tambah($data)
 
 function upload()
 {
-    $namaFile = $_FILES['gambar']['name'];
-    $ukuranFile = $_FILES['gambar']['size'];
-    $error = $_FILES['gambar']['error'];
-    $tmpName = $_FILES['gambar']['tmp_name'];
+    $namaFile = $_FILES['fotokucing']['name'];
+    $namaFile = $_FILES['fotopemilik']['name'];
+    $ukuranFile = $_FILES['fotokucing']['size'];
+    $ukuranFile = $_FILES['fotopemilik']['size'];
+    $error = $_FILES['fotokucing']['error'];
+    $error = $_FILES['fotopemilik']['error'];
+    $tmpName = $_FILES['fotokucing']['tmp_name'];
+    $tmpName = $_FILES['fotopemilik']['tmp_name'];
+
+
+
+
+
+    // cek apakah tidak ada gambar yang diupload 
+    if ($error === 4) {
+        echo "<script>
+        alert('pilih gambar terlebih dahulu!');
+        </script>";
+        return false;
+    }
 }
 
 function hapus($id)
