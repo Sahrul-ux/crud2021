@@ -24,8 +24,8 @@ function tambah($data)
     $usia = htmlspecialchars($data["usia"]);
 
     // upload gambar
-    $gambar = upload();
-    if (!$gambar) {
+    $fotokucing = upload();
+    if (!$fotokucing) {
         return false;
     }
 
@@ -35,8 +35,8 @@ function tambah($data)
     $email = htmlspecialchars($data["email"]);
 
     // upload gambar
-    $gambar = upload();
-    if (!$gambar) {
+    $fotopemilik = upload();
+    if (!$fotopemilik) {
         return false;
     }
 
