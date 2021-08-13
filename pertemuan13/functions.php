@@ -23,7 +23,7 @@ function tambah($data)
     $makanan = htmlspecialchars($data["makanan"]);
     $usia = htmlspecialchars($data["usia"]);
 
-    // upload gambar
+    // upload gambar kucing
     $fotokucing = upload();
     if (!$fotokucing) {
         return false;
@@ -34,7 +34,7 @@ function tambah($data)
     $notelp = htmlspecialchars($data["notelp"]);
     $email = htmlspecialchars($data["email"]);
 
-    // upload gambar
+    // upload gambar pemiliknya
     $fotopemilik = upload();
     if (!$fotopemilik) {
         return false;
