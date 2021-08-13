@@ -59,7 +59,7 @@ if (isset($_POST["submit"])) {
             </li>
             <li>
                 <label for="fotokucing">Foto Kucing</label>
-                <input type="text" name="fotokucing" id="fotokucing">
+                <input type="file" name="fotokucing" id="fotokucing">
             </li>
             <li>
                 <label for="namapemilik">Nama Pemilik</label>
@@ -79,7 +79,7 @@ if (isset($_POST["submit"])) {
             </li>
             <li>
                 <label for="fotopemilik">Foto Pemilik</label>
-                <input type="text" name="fotopemilik" id="fotopemilik">
+                <input type="file" name="fotopemilik" id="fotopemilik">
             </li>
             <lI>
                 <button type="submit" name="submit">Tambah Data</button>
