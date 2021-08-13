@@ -52,6 +52,8 @@ function tambah($data)
 
 function upload()
 {
+
+    // dua gambar foto kucing dan foto pemilik
     $namaFile = $_FILES['fotokucing']['name'];
     $namaFile = $_FILES['fotopemilik']['name'];
     $ukuranFile = $_FILES['fotokucing']['size'];
@@ -72,6 +74,23 @@ function upload()
         </script>";
         return false;
     }
+
+    // cek apakah yang diuplad adalah gambar 
+    $ekstensiGambarValid = ['jpg', 'jpeg', 'png'];
+    //ekstensi gambar apa saja yang boleh diuplad
+    $ekstensiGambar = explode('.', $namaFile);
+    // explode memecah nama gamabr dan ekstensinya
+    $ekstensiGambar = strtolower(end($ekstensiGambar));
+    // end mengambil array paling belakang yaitu ekstensi
+    // strtolower untuk mengubah ekstensi selalu jadi kecil misalkan JPEG jadi jpeg
+    if (!in_array($ekstensiGambar, $ekstensiGambarValid)) {
+        echo "<script>
+    alert('yang anda upload bukan gambar!');
+    </script>";
+        return false;
+    }
+    // in_array untuk cek apakah ada string didalam array
+
 }
 
 function hapus($id)
