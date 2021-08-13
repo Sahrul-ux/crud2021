@@ -22,12 +22,23 @@ function tambah($data)
     $namakucing = htmlspecialchars($data["namakucing"]);
     $makanan = htmlspecialchars($data["makanan"]);
     $usia = htmlspecialchars($data["usia"]);
-    $fotokucing = htmlspecialchars($data["fotokucing"]);
+
+    // upload gambar
+    $gambar = upload();
+    if (!$gambar) {
+        return false;
+    }
+
     $namapemilik = htmlspecialchars($data["namapemilik"]);
     $alamat = htmlspecialchars($data["alamat"]);
     $notelp = htmlspecialchars($data["notelp"]);
     $email = htmlspecialchars($data["email"]);
-    $fotopemilik = htmlspecialchars($data["fotopemilik"]);
+
+    // upload gambar
+    $gambar = upload();
+    if (!$gambar) {
+        return false;
+    }
 
     // query insert data
     $query = "INSERT INTO tb_kucing
@@ -36,6 +47,12 @@ function tambah($data)
     mysqli_query($conn, $query);
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
+}
+
+
+function upload()
+{
+    return false;
 }
 
 function hapus($id)
