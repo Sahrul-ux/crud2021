@@ -107,8 +107,8 @@ function upload()
     $namaFileBaru = $ekstensiGambar;
     var_dump($namaFileBaru);
     die;
-    move_uploaded_file($tmpName, 'img/' . $namaFile);
-    return $namaFile;
+    move_uploaded_file($tmpName, 'img/' . $namaFileBaru);
+    return $namaFileBaru;
 }
 
 function hapus($id)
