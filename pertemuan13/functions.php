@@ -102,13 +102,22 @@ function upload()
 
     // lolos pengecekan, gambar siap diupload
     // generate nama file baru
-    $namaFileBaru = uniqid();
-    $namaFileBaru = '.';
-    $namaFileBaru = $ekstensiGambar;
-    var_dump($namaFileBaru);
-    die;
-    move_uploaded_file($tmpName, 'img/' . $namaFileBaru);
-    return $namaFileBaru;
+    $namaFileBaru1 = uniqid();
+    $namaFileBaru2 = uniqid();
+    $namaFileBaru1 = '.';
+    $namaFileBaru2 = '.';
+    $namaFileBaru1 = $ekstensiGambar;
+    $namaFileBaru2 = $ekstensiGambar;
+
+
+    // var_dump($namaFileBaru1);
+    // var_dump($namaFileBaru2);
+    // die;
+    move_uploaded_file($tmpName, 'kucing/' . $namaFileBaru1);
+    move_uploaded_file($tmpName, 'img/' . $namaFileBaru2);
+
+    return $namaFileBaru1;
+    return $namaFileBaru2;
 }
 
 function hapus($id)
