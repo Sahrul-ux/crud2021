@@ -103,6 +103,8 @@ function upload()
     // lolos pengecekan, gambar siap diupload
     // generate nama file baru
     $namaFileBaru = uniqid();
+    $namaFileBaru = '.';
+    $namaFileBaru = $ekstensiGambar;
     var_dump($namaFileBaru);
     die;
     move_uploaded_file($tmpName, 'img/' . $namaFile);
