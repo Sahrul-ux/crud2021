@@ -91,6 +91,18 @@ function upload()
     }
     // in_array untuk cek apakah ada string didalam array
 
+
+    // cek ukuran gambar terlalu besar
+    if ($ukuranFile > 1000000) {
+        echo "<script>
+    alert('ukuran gambar terlalu besar!');
+    </script>";
+        return false;
+    }
+
+    // lolos pengecekan, gambar siap diupload
+    move_uploaded_file($tmpName, 'img/' . $namaFile);
+    return $namaFile;
 }
 
 function hapus($id)
