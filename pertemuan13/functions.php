@@ -137,12 +137,28 @@ function ubah($data)
     $namakucing = htmlspecialchars($data["namakucing"]);
     $makanan = htmlspecialchars($data["makanan"]);
     $usia = htmlspecialchars($data["usia"]);
-    $fotokucing = htmlspecialchars($data["fotokucing"]);
+    $gambarLama = htmlspecialchars($data["gambarLama"]);
+
+    // cek apakah user pilih gambar baru atau idak
+    if ($_FILES['fotokucing']['error'] === 4) {
+        $fotokucing = $gambarLama;
+    } else {
+        $fotokucing = upload();
+    }
+
     $namapemilik = htmlspecialchars($data["namapemilik"]);
     $alamat = htmlspecialchars($data["alamat"]);
     $notelp = htmlspecialchars($data["notelp"]);
     $email = htmlspecialchars($data["email"]);
-    $fotopemilik = htmlspecialchars($data["fotopemilik"]);
+    $gambarLama = htmlspecialchars($data["gambarLama"]);
+
+    // cek apakah user pilih gambar baru atau idak
+    if ($_FILES['fotopemilik']['error'] === 4) {
+        $fotopemilik = $gambarLama;
+    } else {
+        $fotopemilik = upload();
+    }
+
 
     // query insert data
     $query = "UPDATE tb_kucing SET 
