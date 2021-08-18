@@ -42,7 +42,7 @@ if (isset($_POST["submit"])) {
 <h1>Ubah Data Kucing</h1>
 
 <body>
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= $kcg["id"]; ?>">
         <ul>
             <li>
