@@ -54,23 +54,31 @@ function upload()
 {
 
     // dua gambar foto kucing dan foto pemilik
-    $namaFile = $_FILES['fotokucing']['name'];
-    $namaFile = $_FILES['fotopemilik']['name'];
-    $ukuranFile = $_FILES['fotokucing']['size'];
-    $ukuranFile = $_FILES['fotopemilik']['size'];
-    $error = $_FILES['fotokucing']['error'];
-    $error = $_FILES['fotopemilik']['error'];
-    $tmpName = $_FILES['fotokucing']['tmp_name'];
-    $tmpName = $_FILES['fotopemilik']['tmp_name'];
+    $namaFile1 = $_FILES['fotokucing']['name'];
+    $namaFile2 = $_FILES['fotopemilik']['name'];
+    $ukuranFile1 = $_FILES['fotokucing']['size'];
+    $ukuranFile2 = $_FILES['fotopemilik']['size'];
+    $error1 = $_FILES['fotokucing']['error'];
+    $error2 = $_FILES['fotopemilik']['error'];
+    $tmpName1 = $_FILES['fotokucing']['tmp_name'];
+    $tmpName2 = $_FILES['fotopemilik']['tmp_name'];
 
 
 
 
 
-    // cek apakah tidak ada gambar yang diupload 
-    if ($error === 4) {
+    // cek apakah tidak ada gambar foto kucing yang diupload 
+    if ($error1 === 4) {
         echo "<script>
-        alert('pilih gambar terlebih dahulu!');
+        alert('pilih foto kucing terlebih dahulu!');
+        </script>";
+        return false;
+    }
+
+    // cek apakah tidak ada gambar foto pemilik yang diupload 
+    if ($error2 === 4) {
+        echo "<script>
+        alert('pilih foto pemilik kucing dahulu!');
         </script>";
         return false;
     }
