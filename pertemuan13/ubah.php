@@ -44,6 +44,8 @@ if (isset($_POST["submit"])) {
 <body>
     <form action="" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= $kcg["id"]; ?>">
+        <input type="hidden" name="gambarLama" value="<?= $kcg["fotokucing"]; ?>">
+        <input type="hidden" name="gambarLama" value="<?= $kcg["fotopemilik"]; ?>">
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>
