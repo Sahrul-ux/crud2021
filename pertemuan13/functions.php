@@ -97,6 +97,22 @@ function upload()
         </script>";
         return false;
     }
+
+    // cek jika ukurannya terlalu besar (kucing)
+    if ($ukuranFile1 > 1000000) {
+        echo "<script>
+        alert('ukuran gambar terlalu besar (kucing)!');
+        </script>";
+        return false;
+    }
+
+    // cek jika ukurannya terlalu besar (pemilik)
+    if ($ukuranFile2 > 1000000) {
+        echo "<script>
+        alert('ukuran gambar terlalu besar (pemilik)!');
+        </script>";
+        return false;
+    }
 }
 
 function hapus($id)
