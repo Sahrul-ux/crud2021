@@ -75,6 +75,28 @@ function upload()
         </script>";
         return false;
     }
+
+    // cek apakah yang diuplod adalah gambar untuk kucing
+    $ekstensiGambarValid1 = ['jpg', 'jpeg', 'png'];
+    $ekstensiGambar1 = explode('.', $namaFile1);
+    $ekstensiGambar1 = strtolower(end($ekstensiGambar1));
+    if (!in_array($ekstensiGambar1, $ekstensiGambarValid1)) {
+        echo "<script>
+        alert('yang anda upload bukan file gambar (kucing)!');
+        </script>";
+        return false;
+    }
+
+    // cek apakah yang diuplod adalah gambar untuk pemilik
+    $ekstensiGambarValid2 = ['jpg', 'jpeg', 'png'];
+    $ekstensiGambar2 = explode('.', $namaFile2);
+    $ekstensiGambar2 = strtolower(end($ekstensiGambar2));
+    if (!in_array($ekstensiGambar2, $ekstensiGambarValid2)) {
+        echo "<script>
+        alert('yang anda upload bukan file gambar (pemilik)!');
+        </script>";
+        return false;
+    }
 }
 
 function hapus($id)
