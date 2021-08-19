@@ -22,12 +22,23 @@ function tambah($data)
     $namakucing = htmlspecialchars($data["namakucing"]);
     $makanan = htmlspecialchars($data["makanan"]);
     $usia = htmlspecialchars($data["usia"]);
-    $fotokucing = htmlspecialchars($data["fotokucing"]);
+
+    //upload gambar kucing
+    $fotokucing = upload();
+    if (!$fotokucing) {
+        return false;
+    }
+
     $namapemilik = htmlspecialchars($data["namapemilik"]);
     $alamat = htmlspecialchars($data["alamat"]);
     $notelp = htmlspecialchars($data["notelp"]);
     $email = htmlspecialchars($data["email"]);
-    $fotopemilik = htmlspecialchars($data["fotopemilik"]);
+
+    //upload gambar pemilik
+    $fotopemilik = upload();
+    if (!$fotopemilik) {
+        return false;
+    }
 
     // query insert data
     $query = "INSERT INTO tb_kucing
@@ -36,6 +47,18 @@ function tambah($data)
     mysqli_query($conn, $query);
     // klo gagal -1 klo berhasil 1
     return mysqli_affected_rows($conn);
+}
+
+function upload()
+{
+    $namaFile1 = $_FILES['fotokucing']['name'];
+    $namaFile2 = $_FILES['fotopemilik']['name'];
+    $ukuranFile1 = $_FILES['fotokucing']['size'];
+    $ukuranFile2 = $_FILES['fotopemilik']['size'];
+    $error1 = $_FILES['fotokucing']['Error'];
+    $error2 = $_FILES['fotopemilik']['Error'];
+    $tmpName1 = $_FILES['fotokucing']['tmp_name'];
+    $tmpName2 = $_FILES['fotopemilik']['tmp_name'];
 }
 
 function hapus($id)
