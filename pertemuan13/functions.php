@@ -55,10 +55,26 @@ function upload()
     $namaFile2 = $_FILES['fotopemilik']['name'];
     $ukuranFile1 = $_FILES['fotokucing']['size'];
     $ukuranFile2 = $_FILES['fotopemilik']['size'];
-    $error1 = $_FILES['fotokucing']['Error'];
-    $error2 = $_FILES['fotopemilik']['Error'];
+    $error1 = $_FILES['fotokucing']['error'];
+    $error2 = $_FILES['fotopemilik']['error'];
     $tmpName1 = $_FILES['fotokucing']['tmp_name'];
     $tmpName2 = $_FILES['fotopemilik']['tmp_name'];
+
+    // cek apakah tidak ada gambar kucing yang diupload
+    if ($error1 === 4) {
+        echo "<script>
+        alert('pilih gambar kucing terlebih dahulu!');
+        </script>";
+        return false;
+    }
+
+    // cek apakah tidak ada gambar pemilik yang diupload
+    if ($error2 === 4) {
+        echo "<script>
+        alert('pilih gambar pemilik terlebih dahulu!');
+        </script>";
+        return false;
+    }
 }
 
 function hapus($id)
