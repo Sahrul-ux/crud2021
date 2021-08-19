@@ -42,10 +42,8 @@ if (isset($_POST["submit"])) {
 <h1>Ubah Data Kucing</h1>
 
 <body>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="" method="post">
         <input type="hidden" name="id" value="<?= $kcg["id"]; ?>">
-        <input type="hidden" name="gambarLama" value="<?= $kcg["fotokucing"]; ?>">
-        <input type="hidden" name="gambarLama" value="<?= $kcg["fotopemilik"]; ?>">
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>
@@ -68,9 +66,8 @@ if (isset($_POST["submit"])) {
                 <input type="text" name="usia" id="usia" value="<?= $kcg["usia"]; ?>">
             </li>
             <li>
-                <label for="fotokucing">Foto Kucing</label><br>
-                <img src="kucing/<?= $kcg['fotokucing']; ?>" width="80"><br>
-                <input type="file" name="fotokucing" id="fotokucing" value="<?= $kcg["fotokucing"]; ?>">
+                <label for="fotokucing">Foto Kucing</label>
+                <input type="text" name="fotokucing" id="fotokucing" value="<?= $kcg["fotokucing"]; ?>">
             </li>
             <li>
                 <label for="namapemilik">Nama Pemilik</label>
@@ -89,9 +86,8 @@ if (isset($_POST["submit"])) {
                 <input type="text" name="email" id="email" value="<?= $kcg["email"]; ?>">
             </li>
             <li>
-                <label for="fotopemilik">Foto Pemilik</label><br>
-                <img src="img/<?= $kcg['fotopemilik']; ?>" width="80"><br>
-                <input type="file" name="fotopemilik" id="fotopemilik" value="<?= $kcg["fotopemilik"]; ?>">
+                <label for="fotopemilik">Foto Pemilik</label>
+                <input type="text" name="fotopemilik" id="fotopemilik" value="<?= $kcg["fotopemilik"]; ?>">
             </li>
             <lI>
                 <button type="submit" name="submit">Ubah Data</button>

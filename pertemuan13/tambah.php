@@ -3,8 +3,6 @@ require 'functions.php';
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
     // var_dump($_POST);
-    // var_dump($_FILES);
-    // die;
     // cek apakah data berhasil ditambahkan atau tidak
     if (tambah($_POST) > 0) {
         echo "
@@ -37,7 +35,7 @@ if (isset($_POST["submit"])) {
 <h1>Tambah Data Kucing</h1>
 
 <body>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="" method="post">
         <ul>
             <li>
                 <label for="jeniskucing">Jenis Kucing</label>
@@ -61,7 +59,7 @@ if (isset($_POST["submit"])) {
             </li>
             <li>
                 <label for="fotokucing">Foto Kucing</label>
-                <input type="file" name="fotokucing" id="fotokucing">
+                <input type="text" name="fotokucing" id="fotokucing">
             </li>
             <li>
                 <label for="namapemilik">Nama Pemilik</label>
@@ -81,7 +79,7 @@ if (isset($_POST["submit"])) {
             </li>
             <li>
                 <label for="fotopemilik">Foto Pemilik</label>
-                <input type="file" name="fotopemilik" id="fotopemilik">
+                <input type="text" name="fotopemilik" id="fotopemilik">
             </li>
             <lI>
                 <button type="submit" name="submit">Tambah Data</button>
