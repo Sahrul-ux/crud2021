@@ -113,6 +113,20 @@ function upload()
         </script>";
         return false;
     }
+
+    // lolos pengecekan
+    // generate nama gambar baru
+    $namaFileBaru1 = uniqid();
+    $namaFileBaru1 .= '.';
+    $namaFileBaru1 .= $ekstensiGambar1;
+    move_uploaded_file($tmpName1, 'kucing/' . $namaFileBaru1);
+    return $namaFileBaru1;
+
+    $namaFileBaru2 = uniqid();
+    $namaFileBaru2 .= '.';
+    $namaFileBaru2 .= $ekstensiGambar2;
+    move_uploaded_file($tmpName2, 'img/' . $namaFileBaru2);
+    return $namaFileBaru2;
 }
 
 function hapus($id)
