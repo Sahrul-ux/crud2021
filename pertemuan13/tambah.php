@@ -2,7 +2,8 @@
 require 'functions.php';
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
-    // var_dump($_POST);
+    var_dump($_POST);
+    die;
     // cek apakah data berhasil ditambahkan atau tidak
     if (tambah($_POST) > 0) {
         echo "
